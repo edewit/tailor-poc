@@ -1,0 +1,24 @@
+{
+  "name": "tailor-angular-spa",
+  "version": "1.0.0",
+  "description": "This is an Angular Single Page Application.",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "start-tailor": "node tailor.js"
+  },
+  "author": "Erik Jan de Wit",
+  "license": "MIT",
+  "dependencies": {
+    "http-forward": "^0.1.3",
+    "node-tailor": "^3.6.0",
+    "tag-loader": "^0.3.0"
+  },
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-core": "^6.14.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.14.0",
+    "webpack": "^2.1.0-beta.27"
+  }
+}

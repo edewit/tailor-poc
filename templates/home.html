@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tailor SPA</title>
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+	<meta charset="utf-8">
+	<script src="https://rawgit.com/krasimir/EventBus/master/lib/eventbus.min.js"></script>
+	<script>
+		Pipe.onDone(() => {
+			require(['EventBus'], function(bus) {
+				window.EventBus = bus;
+				require(['polyfills-header','vendor-header', 'header'], function() {
+					require(['polyfills','vendor', 'fabric8']);
+				});
+			});
+		});
+	</script>
+</head>
+<body>
+	<fragment async src="http://localhost:8002"></fragment>
+	<fragment src="http://localhost:3000"></fragment>
+</body>
+</html>
